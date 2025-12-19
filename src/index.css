@@ -1,0 +1,60 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* My CSS - above one is default vite template... jise mene change krna zaruri nahi samjha*/
+  /* background: linear-gradient(135deg, #D8E0E8, #F0F2F5, #F2E4E9); */
+  
+}
+
+html,body{
+  overflow-x: hidden;
+}
+
+
+@keyframes scan-move-tl {
+  0%   { transform: translate(0, 0); }
+  20%  { transform: translate(24px, 0); }
+  40%  { transform: translate(0, 0); }
+  60%  { transform: translate(0, 24px); }
+  80%  { transform: translate(0, 0); }
+  100% { transform: translate(0, 0); }
+}
+
+.animate-scan-tl {
+  animation: scan-move-tl 4s ease-in-out infinite;
+}
+
+@keyframes scan-move-br {
+  0%   { transform: translate(0, 0); }
+  20%  { transform: translate(-24px, 0); }
+  40%  { transform: translate(0, 0); }
+  60%  { transform: translate(0, -24px); }
+  80%  { transform: translate(0, 0); }
+  100% { transform: translate(0, 0); }
+}
+
+.animate-scan-br {
+  animation: scan-move-br 4s ease-in-out infinite;
+}
+
+
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}

@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+:root{
+  --bg-gr: repeating-linear-gradient(135deg, #D8E0E8, #F0F2F5, #F2E4E9, #F0F2F5);
+  /* --bg-gr: repeating-linear-gradient(120deg, #eceffd, #E6E6FA, #CCCCFF, #E6E6FA); */
+  --bg-nav: linear-gradient(75deg, #F5F5F5, #F5FEFD, #f1d4de);
+  --text-main: #301934;
+  --text-muted: #36454F;
+  --accent: #191970;
+  --accent-muted: #00416A;
+  --lsbg: #012169;
+  --lssc: #DA70D6;
+  
+  /* --dash-card:linear-gradient(225deg, #e8caffd0, #dcabff, #cf86ff); */
+  --dash-card:linear-gradient(225deg, #f7ecffba, #ecfeff, #cefafe8c);
+  --pro-card:linear-gradient(-90deg, #e0ecfc 7%, #bcbcdd);
+  
+  /* --lcard: linear-gradient(25deg, #fda5d6, #dab2ff); */
+  --lcard: linear-gradient(175deg, #fdf2f8, #f3e8ff);
+  --lr-btn: linear-gradient(45deg, #fda5d6, #dab2ff);
+  --form-text: #0f0f61;
+
+
+
+  --bulb: #ffd54d;
+  --bulb-glow: 0 0 12px #ff684d, 0 0 30px #ffa280;
+}
+
+
+.dark{
+  /* background-image: linear-gradient(135deg, #2c2f33, #4e5d94); */
+  /* background: linear-gradient(25deg, #2B2D4F 0%, #1B1C33 50%, #121320 80% ); */
+  --bg-gr: linear-gradient(135deg, #202020, #04001b, #00093d);
+  --bg-nav: linear-gradient(75deg, #202020 5%, #301934 50%, #191970 100%)  ;
+  --text-main: #E2E8F0;
+  --text-muted: #94A3B8;
+  --accent: #6dd7dd;
+  --accent-muted: #50c8b496;
+  --lsbg: #BF40BF;
+  --lssc: #F33A6A;
+
+  /* --lcard: linear-gradient(25deg, #f6339b75, #9810fa75); */
+  --dash-card:linear-gradient(225deg, #10011b, #3f2452, #19151f);
+  --pro-card:linear-gradient(-135deg, #0F2027, #203A43, #0F2047) ;
+
+  --lcard: linear-gradient(320deg, #f6339b2f, #9810fa1b);
+  --lr-btn: linear-gradient(45deg, #f6339b, #9810fa);
+  --form-text: #4848d7 ;
+
+  /* --bulb: #E6F7FF; */
+  --bulb: #FFFAF0;
+  --bulb-glow: 0 0 10px #FFF5EE, 0 0 25px #FFF5EE;
+  /* --bulb-glow: 0 0 10px #7DF9FF, 0 0 25px #7DF9FF; */
+
+}
+
+
+#root {
+  /* max-width: 1280px; */
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  /* background-image: linear-gradient(135deg, #b25da6, #6688c6, #48a56a, #eaaf41, #ce4a4a); */
+}
+
+
+
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
